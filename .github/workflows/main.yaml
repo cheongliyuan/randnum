@@ -53,12 +53,12 @@ jobs:
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
           
       #https://github.com/marketplace/actions/slack-notification
-      - uses: actions/checkout@master
-      - 
-        name: Slack Notification Demo
-        uses: bryannice/gitactions-slack-notification@2.0.0
-        env:
-          SLACK_INCOMING_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SLACK_MESSAGE: 'Demo''ing the Slack Notification' 
-          SLACK_TITLE: 'Slack Notification Demo'
-          SLACK_CHANNEL: '#sa54-test-submission'
+      # - uses: actions/checkout@master
+      # - 
+      #   name: Slack Notification Demo
+      #   uses: bryannice/gitactions-slack-notification@2.0.0
+      #   env:
+      #     SLACK_INCOMING_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+      #     SLACK_MESSAGE: 'Demo''ing the Slack Notification' 
+      #     SLACK_TITLE: 'Slack Notification Demo'
+      #     SLACK_CHANNEL: '#sa54-test-submission'
