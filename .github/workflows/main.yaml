@@ -1,9 +1,9 @@
 name: CICD Workshop workflow
 on: 
-  release: 
+  push: 
 jobs: 
   test_release_echo: 
     runs-on: ubuntu-latest
     steps: 
     - name: echo the date
-      run: echo "test release"
+      run: echo "test push"
