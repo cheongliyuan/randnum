@@ -1,7 +1,8 @@
 name: CICD Workshop workflow
 on: 
-  release: 
-    type: [created]
+  push:
+  #release: #setting to push for ease
+    #type: [created]
 jobs: 
   docker:
     runs-on: ubuntu-latest
