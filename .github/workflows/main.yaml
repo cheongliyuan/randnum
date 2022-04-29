@@ -1,7 +1,7 @@
 name: CICD Workshop workflow
 on: 
   push:
-  #release: #setting to push for ease
+  #release: #setting to push for 
     #type: [created]
 jobs: 
   docker:
@@ -19,6 +19,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      -
         name: Build and push
         uses: docker/build-push-action@v2
         with:
