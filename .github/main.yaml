@@ -1,0 +1,8 @@
+name: CICD Workshop workflow
+on: 
+  release: 
+jobs: 
+  test_release_echo: 
+    steps: 
+    - name: echo the date
+      run: echo "test release"
