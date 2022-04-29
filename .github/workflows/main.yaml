@@ -1,6 +1,7 @@
 name: CICD Workshop workflow
 on: 
   release: 
+  type: [published]
 jobs: 
   test_release_echo: 
     runs-on: ubuntu-latest
