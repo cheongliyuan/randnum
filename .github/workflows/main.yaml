@@ -44,7 +44,10 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: Cheong Li Yuan\nMatriculation: A0144049H\nEmail: e0008064@u.nus.edu\n:Repo:"
+                    "text": "Name: Cheong Li Yuan\n
+                      Matriculation: A0144049H\n
+                      Email: e0008064@u.nus.edu\n
+                      Repo: "
                   }
                 }
               ]
@@ -52,14 +55,3 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
-          
-      #https://github.com/marketplace/actions/slack-notification
-      # - uses: actions/checkout@master
-      # - 
-      #   name: Slack Notification Demo
-      #   uses: bryannice/gitactions-slack-notification@2.0.0
-      #   env:
-      #     SLACK_INCOMING_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-      #     SLACK_MESSAGE: 'Demo''ing the Slack Notification' 
-      #     SLACK_TITLE: 'Slack Notification Demo'
-      #     SLACK_CHANNEL: '#sa54-test-submission'
