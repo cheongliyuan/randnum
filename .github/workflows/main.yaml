@@ -44,10 +44,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: Cheong Li Yuan\n
-                      Matriculation: A0144049H\n
-                      Email: e0008064@u.nus.edu\n
-                      Repo: "
+                    "text": "Name: ${{ env.Name }}\nMatriculation: ${{ env.M_Num }}\nEmail:${{ env.Email }}\nRepo: ${{ env.Repo }}\nImage name:  "
                   }
                 }
               ]
@@ -55,3 +52,11 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
+          Name: Cheong Li Yuan
+          M_Num: A0144049H
+          Email: e0008064@u.nus.edu
+          Repo: git@github.com:cheongliyuan/DipSA-CICD-Workshop.git
+          Image_Name: 
+          Image_URL: 
+          
+          
