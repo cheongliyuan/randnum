@@ -44,7 +44,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "Name: ${{ env.Name }}\nMatriculation: ${{ env.M_Num }}\nEmail:${{ env.Email }}\nRepo: ${{ env.Repo }}\nImage name:  "
+                    "text": "Name: ${{ env.Name }}\nMatriculation: ${{ env.M_Num }}\nEmail: ${{ env.Email }}\nRepo: ${{ env.Repo }}\nImage name: \nImage url: "
                   }
                 }
               ]
@@ -55,7 +55,7 @@ jobs:
           Name: Cheong Li Yuan
           M_Num: A0144049H
           Email: e0008064@u.nus.edu
-          Repo: git@github.com:cheongliyuan/DipSA-CICD-Workshop.git
+          Repo: git://github.com:cheongliyuan/DipSA-CICD-Workshop.git
           Image_Name: 
           Image_URL: 
           
