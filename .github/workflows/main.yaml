@@ -51,9 +51,9 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
-          Name: Cheong Li Yuan
-          M_Num: A0144049H
-          Email: e0008064@u.nus.edu
+          Name: ${{ secrets.MY_NAME }}
+          M_Num: ${{ secrets.MY_MATRICULATION_NUMBER }}
+          Email: ${{ secrets.MY_EMAIL }}
           Repo: git://github.com:cheongliyuan/DipSA-CICD-Workshop.git
-          Image_Name: e0008064/randnum:${{ github.ref_name }} 
-          Image_URL: https://hub.docker.com/repository/docker/e0008064/randnum 
+          Image_Name: ${{ secrets.DOCKER_IMAGE_NAME }}:${{ github.ref_name }} 
+          Image_URL: ${{ secrets.DOCKER_IMAGE_URL }}
