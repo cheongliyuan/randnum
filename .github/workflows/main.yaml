@@ -1,6 +1,5 @@
 name: CICD Workshop workflow
 on: 
-  push:
   release: 
     type: [published]
 jobs: 
