@@ -2,6 +2,8 @@ name: CICD Workshop workflow
 on: 
   release: 
     type: [published]
+    tag: 
+    - v0.*
 jobs: 
   docker:
     runs-on: ubuntu-latest
