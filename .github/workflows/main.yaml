@@ -55,4 +55,4 @@ jobs:
           Email: e0008064@u.nus.edu
           Repo: git://github.com:cheongliyuan/DipSA-CICD-Workshop.git
           Image_Name: e0008064/randnum:${{ github.ref_name }} 
-          Image_URL: https://hub.docker.com/repository/docker/e0008064/randnum
+          Image_URL: https://hub.docker.com/repository/docker/e0008064/randnum 
