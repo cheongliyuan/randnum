@@ -1,10 +1,9 @@
 name: CICD Workshop workflow
-on: 
-  push:   
-  # release: 
-  #   type: [published]
-  #   tag: 
-  #   - v0.*
+on:  
+  release: 
+    type: [published]
+    tag: 
+    - v0.*
 jobs: 
   docker:
     runs-on: ubuntu-latest
